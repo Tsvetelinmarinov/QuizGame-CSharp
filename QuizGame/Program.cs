@@ -1,19 +1,15 @@
-﻿/**
+﻿/*
  * Game control panel
  */
 
 
 namespace QuizGame
 {
-
-
-    class Program
+    internal abstract class Program
     {
-
-
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            GameEngine engine = new GameEngine();
+            var engine = new GameEngine();
             engine.LoadMainScreen();
         }
 
