@@ -33,7 +33,7 @@ namespace QuizGame
 
 
 
-        //Съдържа всияки отговори
+        //Съдържа всички отговори
         private readonly string[,] _answers = 
         {
             { "A. French writer", "B. Italian compositor" },
@@ -50,7 +50,7 @@ namespace QuizGame
 
 
 
-        //Съдържа всички верни отговора
+        //Съдържа всички верни отговори
         private readonly string[] _keys = ["A", "B", "B", "B", "B", "B", "B", "B", "B", "B"];
 
 
@@ -69,8 +69,9 @@ namespace QuizGame
             {
                 Console.WriteLine("\n\n Invalid input!\n\n");
             }
-            
-            
+
+
+
             switch (inputStream)
             {
                 case 1:
@@ -79,10 +80,10 @@ namespace QuizGame
                 case 2:
                     _appFunctions.QuitProgram();
                     break;
-                default: Console.WriteLine("\n Invalid input!\n");
+                default:
+                    Console.WriteLine("\n\n Invalid input!\n\n");
                 break;
             }
-
 
             SwitchUserChoose();
 
@@ -107,7 +108,7 @@ namespace QuizGame
                         break;
                     default:
                         Console.WriteLine("\n Invalid input!\n");
-                        continue;
+                    continue;
                 }
 
                 break;
