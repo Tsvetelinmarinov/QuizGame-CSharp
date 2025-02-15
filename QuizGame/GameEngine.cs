@@ -12,7 +12,7 @@ namespace QuizGame
     {
 
         //Инициализиране на фунцкионален клас
-        private readonly Functions _appFunctions = new Functions();
+        private readonly Functions _appFunctions = new();
 
 
         //Съдържа всички въпроси
@@ -75,7 +75,7 @@ namespace QuizGame
             switch (inputStream)
             {
                 case 1:
-                    _appFunctions.LoadQuestionsAndAnswers(_questions, _answers, _keys);
+                    Functions.LoadQuestionsAndAnswers(_questions, _answers, _keys);
                     break;
                 case 2:
                     _appFunctions.QuitProgram();

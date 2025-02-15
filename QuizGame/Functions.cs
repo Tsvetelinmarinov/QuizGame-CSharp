@@ -20,7 +20,7 @@ namespace QuizGame
 
 
         //Зареди въпросите и отговорите
-        public void LoadQuestionsAndAnswers(string[] questionsArray, string[,] answersArray, string[] keys)
+        public static void LoadQuestionsAndAnswers(string[] questionsArray, string[,] answersArray, string[] keys)
         {
             Console.WriteLine("----------------------------\n\n");
 
